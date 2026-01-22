@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAllProduct } from "../Services/ProductService";
 import { useLoaderData, useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 interface ProductType {
     ProductId: number;
     Name: string;
