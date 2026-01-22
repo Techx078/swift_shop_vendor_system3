@@ -8,6 +8,7 @@ function Cart() {
     <>
       <div>
         <h1 className="flex justify-center">Cart </h1>
+        {items.length == 0 && (<p>No item fount in cart</p>)}
         {items.map((product, index) => (
           <div key={product.ProductId} className="bg-white rounded-lg shadow-lg m-4 text-center">
             <div className="p-4">

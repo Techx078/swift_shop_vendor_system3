@@ -26,7 +26,6 @@ function ProductCustomize() {
   }
   return (
     <>
-      {console.log(items)}
       <h1 className="flex justify-center">Add product Quantity</h1>
       <div className="bg-white rounded-lg shadow-lg m-4 text-center">
         <div className="p-4">
