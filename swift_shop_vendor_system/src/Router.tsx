@@ -5,6 +5,7 @@ import ProductDetails from "./pages/ProductDetails.tsx";
 import ProductCustomize from "./pages/ProductCustomize.tsx";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage"
+import Cart from "./pages/Cart.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "product/:id/customiz",
         element: <ProductCustomize />,
+      },
+      {
+        path:"cart",
+        element:<Cart />
       },
       {
         path: "about",

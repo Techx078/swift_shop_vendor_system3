@@ -30,7 +30,14 @@ function Navbar() {
                                 fontWeight: isActive ? "bold" : "normal",
                                 textDecoration: "none",
                             })}
-                        >About</NavLink>
+                        >About</NavLink> |
+                         <NavLink to="/Cart"
+                            style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                                textDecoration: "none",
+                            })}
+                        >Cart</NavLink>
                         <span className="text-gray-700">Welcome, here </span>
                         <p className="block px-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
                             <i className="fa-solid fa-user"></i>
